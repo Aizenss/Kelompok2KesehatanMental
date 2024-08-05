@@ -5,182 +5,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas P5 Smanta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
         body {
-            font-family: 'Poppins', sans-serif;
-            padding: 10px;
-            padding: 10px 100px;
-        }
-
-        main {
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        body h1 {
-            font-size: clamp(2rem, 6vw, 5rem);
-        }
-
-        img {
-            box-shadow: 6px 6px 6px rgb(186, 186, 186);
-            width: 100%;
-            max-width: 500px;
-            border-radius: 10px;
-        }
-
-        .team {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .team h3 {
-            padding: 3px 5px;
-            background-color: aqua;
-            border-radius: 3px;
-            margin-right: 5px;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-
-            img {
-                width: 100%;
-                max-width: none;
-            }
-
-            .team {
-                flex-direction: row;
-                align-items: center;
-            }
-
-            .team h3 {
-                margin-bottom: 10px;
-            }
+            font-family: 'Poppins';
         }
     </style>
 </head>
 
 <body>
-    <h1>Informasi Kesehatan Mental</h1>
-    <main>
-        <img src="https://www.its.ac.id/news/wp-content/uploads/sites/2/2020/04/kesehatan-mental-3.png" alt="Gambar">
-        <ul>
-            <li>
-                <h2>pengertian secara umum</h2>
-                <p>kesehatan mental adalah kesehatan yang berkaitan dengan kondisi emosi, kejiwaan, dan psikis
-                    seseorang.
-                </p>
-            </li>
-            <li>
-                <h2>hal apa saja penyebab gangguan kesehatan mental?</h2>
-                <ol>
-                    <li>cedera pada kepala.</li>
-                    <li>Faktor genetik atau terdapat riwayat pengidap gangguan kesehatan jiwa dalam keluarga.</li>
-                    <li>Kekerasan dalam rumah tangga atau bentuk pelecehan lainnya.
-                    </li>
-                    <li>Adanya riwayat kekerasan saat kanak-kanak.
-                    </li>
-                    <li>Mengalami diskriminasi dan stigma.
+    <nav class="bg-[#252525]">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-semibold text-white whitespace-nowrap">Kelompok 2</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                    <li>
+                        <a href="#beranda" class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0"
+                            aria-current="page">Beranda</a>
                     </li>
                     <li>
-                        Kehilangan atau kematian seseorang yang sangat dekat.
-                    </li>
-                    <li>Mengalami kerugian sosial, seperti masalah kemiskinan atau utang.
-                    </li>
-                    <li>Merawat anggota keluarga atau teman yang sakit kronis.</li>
-                    <li>Pengangguran, kehilangan pekerjaan, atau tunawisma.</li>
-                    <li>Pengaruh zat racun, alkohol, atau obat-obatan yang dapat merusak otak.</li>
-                </ol>
-            </li>
-            <li>
-                <h2>faktor- faktor yang dapat meningkatkan gangguan kesehatan mental :</h2>
-                <ol>
-                    <li>Adanya masalah pada masa kanak-kanak atau masalah gaya hidup.</li>
-                    <li>Menjalani profesi yang memicu stres, seperti dokter dan pengusaha.</li>
-                    <li>Memiliki riwayat anggota keluarga atau keluarga dengan penyakit mental.</li>
-                    <li>Mempunyai riwayat kelahiran dengan kelainan pada otak.</li>
-                    <li>Adanya riwayat penyakit mental sebelumnya.</li>
-                    <li>Mengalami kegagalan dalam hidup, seperti sekolah atau kehidupan kerja.</li>
-                    <li>Menyalahgunakan alkohol atau obat-obatan terlarang.</li>
-                    <li>Wanita pasca melahirkan.</li>
-                </ol>
-            </li>
-            <li>
-                <h2>Bagaimana cara menangani gangguan kesehatan mental?</h2>
-                <ol>
-                    <li>
-                        <h3>Psikoterapi</h3>
-                        <p>Psikiater akan memberi bantuan dengan membimbing pengidap dalam mengontrol perasaan.</p>
+                        <a href="#Pengertian"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Pengertian</a>
                     </li>
                     <li>
-                        <h3>Obat</h3>
-                        <p>Pemberian obat-obatan untuk mengobati penyakit kesehatan jiwa umumnya bertujuan untuk
-                            mengubah senyawa kimia pada otak.</p>
+                        <a href="#"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Services</a>
                     </li>
                     <li>
-                        <h3>Support Group</h3>
-                        <p>Support group pada umumnya memiliki anggota pengidap penyakit kesehatan mental yang sejenis
-                            atau mereka yang sudah dapat mengendalikan emosinya dengan baik.</p>
+                        <a href="#"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Pricing</a>
                     </li>
                     <li>
-                        <h3>Rehabilitasi</h3>
-                        <p>Pengobatan terhadap penyalahgunaan zat memiliki tujuan utama untuk membantu menangani
-                            pengidap gangguan kesehatan mental yang terjadi karena ketergantungan akibat
-                            penyalahgunaan zat terlarang.</p>
+                        <a href="#"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact</a>
                     </li>
-                </ol>
-            </li>
-            <li>
-                <h2>Gangguan mental dapat dicegah dengan cara sebagai berikut:</h2>
-                <ol>
-                    <li>Melakukan aktivitas fisik dan tetap aktif secara fisik.</li>
-                    <li>Membantu orang lain dengan tulus.</li>
-                    <li>Membiasakan berpikir positif.</li>
-                    <li>Memiliki kemampuan untuk mengatasi masalah.</li>
-                    <li>Mencari bantuan profesional jika memang kamu memerlukannya.</li>
-                    <li>Menjaga hubungan baik dengan orang lain.</li>
-                    <li>Memastikan tubuh mendapatkan cukup waktu istirahat.</li>
-                </ol>
-            </li>
-        </ul>
-    </main>
-    <aside>
-        <div>
-            <h1>Kelompok 2 </h1>
-            <ul style="list-style: none;">
-                <li class="team">
-                    <h3>03</h3>
-                    <p>Adinda Zhoya Hapsari</p>
-                </li>
-                <li class="team">
-                    <h3>04</h3>
-                    <p>Alisa Angelica Noviansa</p>
-                </li>
-                <li class="team">
-                    <h3>06</h3>
-                    <p>Anggun Maharani Nigita P.</p>
-                </li>
-                <li class="team">
-                    <h3>29</h3>
-                    <p>Sahira Rana Annisa</p>
-                </li>
-                <li class="team">
-                    <h3>31</h3>
-                    <p>Vebriyanti Rukmana</p>
-                </li>
-                <li class="team">
-                    <h3>35</h3>
-                    <p>Zahra Angelina Bustomy</p>
-                </li>
-            </ul>
+                </ul>
+            </div>
         </div>
-    </aside>
+    </nav>
+    <main>
+        <section id="beranda" class="flex flex-col justify-center items-center px-4 py-[30px] lg:py-[50px]">
+            <span class="text-[30px] lg:text-[70px] font-bold text-center">Informasi Kesehatan Mental</span>
+            <span class="text-[15px] lg:text-[40px] font-bold">Kelompok 2</span>
+            <ul class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 text-center">
+                <li class="py-2 px-4 border-2 border-[#252525] rounded-lg">Adinda Zhoya Hapsari (03)</li>
+                <li class="py-2 px-4 border-2 border-[#252525] rounded-lg">Alisa Angelica Noviansa (04)</li>
+                <li class="py-2 px-4 border-2 border-[#252525] rounded-lg">Anggun Maharani Nigita P. (06)</li>
+                <li class="py-2 px-4 border-2 border-[#252525] rounded-lg">Sahira Rana Annisa (29)</li>
+                <li class="py-2 px-4 border-2 border-[#252525] rounded-lg">Vebriyanti Rukmana (31)</li>
+                <li class="py-2 px-4 border-2 border-[#252525] rounded-lg">Zahra Angelina Bustomy (35)</li>
+            </ul>
+        </section>
+        <section id="pengertian" class="flex flex-col justify-center px-[10px] lg:px-[50px] py-[30px]">
+            <img src="https://www.its.ac.id/news/wp-content/uploads/sites/2/2020/04/kesehatan-mental-3.png" alt="Gambar"
+                class="w-[700px] shadow-lg rounded-lg mx-auto">
+            <div class="text-start mt-10">
+                <h1 class="text-[15px] lg:text-[30px] font-bold">- Pengertian Kesehatan Mental</h1>
+                <p class="ms-1 lg:ms-5 text-[12px]">Kesehatan jiwa atau sebutan lainnya kesehatan mental adalah kesehatan yang
+                    berkaitan
+                    dengan kondisi emosi, kejiwaan, dan psikis seseorang.
+                    Perlu kamu ketahui bahwa peristiwa dalam hidup yang berdampak besar pada kepribadian dan perilaku
+                    seseorang bisa berpengaruh pada kesehatan mentalnya.
+                    Misalnya, pelecehan saat usia dini, stres berat dalam jangka waktu lama tanpa adanya penanganan, dan
+                    mengalami kekerasan dalam rumah tangga.
+                    Berbagai kondisi tersebut bisa membuat kondisi kejiwaan seseorang terganggu, sehingga muncul gejala
+                    gangguan kesehatan jiwa.
+                    Akan tetapi, masalah kesehatan mental bisa mengubah cara seseorang dalam mengatasi stres,
+                    berhubungan dengan orang lain, membuat pilihan, dan memicu hasrat untuk menyakiti diri sendiri.
+                    Beberapa jenis gangguan mental yang umum terjadi antara lain depresi, gangguan bipolar, kecemasan,
+                    gangguan stres pasca trauma (PTSD), gangguan obsesif kompulsif (OCD), dan psikosis.
+                    Selain itu, ada beberapa penyakit mental hanya terjadi pada jenis pengidap tertentu, seperti
+                    postpartum depression hanya menyerang ibu setelah melahirkan.</p>
+            </div>
+            <div class="text-start mt-10">
+                <h1 class="text-[15px] lg:text-[30px] font-bold">- Apa Saja Penyebab Gangguan Kesehatan Mental?</h1>
+                <div class="ms-1 lg:ms-5">
+                    <span>Ada beberapa kondisi yang bisa menjadi penyebab seseorang mengalami gangguan kesehatan jiwa,
+                        antara lain: </span>
+                    <ol class="list-decimal list-inside ms-3 text-[12px]">
+                        <li>Cedera pada kepala.</li>
+                        <li>Faktor genetik atau terdapat riwayat pengidap gangguan kesehatan jiwa dalam keluarga.</li>
+                        <li>Kekerasan dalam rumah tangga atau bentuk pelecehan lainnya.</li>
+                        <li>Adanya riwayat kekerasan saat kanak-kanak.</li>
+                        <li>Memiliki kelainan senyawa kimia otak atau gangguan pada otak.</li>
+                        <li>Diskriminasi dan stigma.</li>
+                        <li>Kehilangan atau kematian seseorang yang sangat dekat.</li>
+                        <li>Mengalami kerugian sosial, seperti masalah kemiskinan atau utang.</li>
+                        <li>Merawat anggota keluarga atau teman yang sakit kronis.</li>
+                        <li>Pengangguran, kehilangan pekerjaan, atau tunawisma.</li>
+                        <li>Pengaruh zat racun, alkohol, atau obat-obatan yang dapat merusak otak.</li>
+                        <li>Stres berat yang terjadi dalam waktu yang lama.</li>
+                        <li>Terisolasi secara sosial atau merasa kesepian.</li>
+                        <li>Tinggal pada lingkungan perumahan yang buruk.</li>
+                        <li>Mengalami trauma yang signifikan, seperti pertempuran militer, kecelakaan serius, atau
+                            tindakan kriminal lainnya.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="text-start mt-10">
+                <h1 class="text-[15px] lg:text-[30px] font-bold">- Faktor Risiko Gangguan Kesehatan Mental</h1>
+                <div class="ms-1 lg:ms-5">
+                    <p>Selain itu, ada beberapa faktor yang bisa meningkatkan risiko seseorang mengalami gangguan
+                        kesehatan jiwa.
+                        Faktor tersebut antara lain:</p>
+                    <ol class="list-decimal list-inside ms-3 text-[12px]">
+                        <li>Wanita berisiko tinggi mengidap depresi dan kecemasan, sedangkan laki-laki memiliki risiko
+                            mengidap ketergantungan zat dan antisosial.</li>
+                        <li>Wanita setelah melahirkan.</li>
+                        <li>Adanya masalah pada masa kanak-kanak atau masalah gaya hidup.</li>
+                        <li>Menjalani profesi yang memicu stres, seperti dokter dan pengusaha.</li>
+                        <li>Memiliki riwayat anggota keluarga atau keluarga dengan penyakit mental.</li>
+                        <li>Mempunyai riwayat kelahiran dengan kelainan pada otak.</li>
+                        <li>Adanya riwayat penyakit mental sebelumnya.</li>
+                        <li>Mengalami kegagalan dalam hidup, seperti sekolah atau kehidupan kerja.</li>
+                        <li>Menyalahgunakan alkohol atau obat-obatan terlarang.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="text-start mt-10">
+                <h1 class="text-[15px] lg:text-[30px] font-bold">- Gejala Gangguan Kesehatan Mental</h1>
+                <div class="ms-1 lg:ms-5">
+                    <p>Gejala gangguan kesehatan jiwa bisa berbeda bergantung pada jenisnya.
+                        Kendati demikian, gejala umum dari kelainan kesehatan ini yang bisa kamu kenali antara lain:</p>
+                    <ol class="list-decimal list-inside ms-3 text-[12px]">
+                        <li>Berteriak atau berkelahi dengan keluarga dan teman-teman.</li>
+                        <li>Delusi, paranoia, atau halusinasi.</li>
+                        <li>Kehilangan kemampuan untuk berkonsentrasi.</li>
+                        <li>Ketakutan, kekhawatiran, atau perasaan bersalah yang selalu menghantui.</li>
+                        <li>Ketidakmampuan untuk mengatasi stres atau masalah sehari-hari.</li>
+                        <li>Marah berlebihan dan rentan melakukan kekerasan.</li>
+                        <li>Memiliki pengalaman dan kenangan buruk yang tidak dapat dilupakan.</li>
+                        <li>Adanya pikiran untuk menyakiti diri sendiri atau orang lain.</li>
+                        <li>Menarik diri dari orang-orang dan kegiatan sehari-hari.</li>
+                        <li>Mendengar suara atau mempercayai sesuatu yang tidak benar.</li>
+                        <li>Mengalami nyeri yang tidak dapat dijelaskan.</li>
+                        <li>Menunjukkan perubahan suasana hati secara mendadak yang menyebabkan masalah dalam hubungan
+                            dengan orang lain.</li>
+                        <li>Merasa bingung, pelupa, marah, tersinggung, cemas, kesal, khawatir, dan takut yang tidak
+                            biasa.</li>
+                        <li>Perasaan sedih, tidak berarti, tidak berdaya, putus asa, atau tanpa harapan.</li>
+                        <li>Merokok, minum alkohol lebih banyak dari biasanya, atau bahkan menggunakan narkoba.</li>
+                        <li>Perubahan drastis dalam kebiasaan makan, seperti makan terlalu banyak atau terlalu sedikit.
+                        </li>
+                        <li>Perubahan gairah seks.</li>
+                        <li>Rasa lelah yang signifikan, energi menurun, atau mengalami masalah tidur.</li>
+                        <li>Tidak dapat melakukan aktivitas sehari-hari seperti merawat anak atau pergi ke sekolah atau
+                            tempat kerja.</li>
+                        <li>Tidak mampu memahami situasi dan orang-orang.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="text-start mt-10">
+                <h1 class="text-[15px] lg:text-[30px] font-bold">- Pengobatan Gangguan Kesehatan Mental</h1>
+                <div class="ms-1 lg:ms-5">
+                    <p>Ada beberapa cara penanganan gangguan kesehatan mental yang bisa menjadi pilihan sesuai dengan
+                        kondisi yang terjadi pada pengidap, yaitu: </p>
+                    <ul class="ms-3 text-[12px]">
+                        <li>
+                            <h1 class="text-[15px] lg:text-[20px] font-bold">1. Psikoterapi</h1>
+                            <p class="text-[12px]">
+                                Pertama, penanganan dengan psikoterapi. Ini merupakan jenis terapi dengan media yang
+                                aman untuk mengungkapkan perasaan dan memberikan saran yang sesuai.
+                                Dalam situasi ini, psikiater akan memberi bantuan dengan membimbing pengidap dalam
+                                mengontrol perasaan.
+                                Sementara itu, psikoterapi beserta perawatan dengan menggunakan obat-obatan merupakan
+                                cara yang paling efektif untuk mengobati penyakit kesehatan mental.
+                                Contohnya cognitive behavioral therapy, exposure therapy, dialectical behavior therapy,
+                                dan sebagainya.
+                            </p>
+                        </li>
+                        <li>
+                            <h1 class="text-[15px] lg:text-[20px] font-bold">2. Obat</h1>
+                            <p class="text-[12px]">
+                                Pemberian obat-obatan untuk mengobati penyakit kesehatan jiwa umumnya bertujuan untuk
+                                mengubah senyawa kimia pada otak.
+                                Beberapa obat tersebut berupa golongan selective serotonin reuptake inhibitor (SSRI),
+                                serotonin-norepinephrine reuptake inhibitor (SNRIs), dan antidepresan trisiklik.
+                                Dokter biasanya akan mengombinasikan resep obat dengan psikoterapi untuk hasil
+                                pengobatan yang lebih efektif.
+                                Bipolar dan skizofrenia merupakan dua dari berbagai jenis gangguan mental yang umum
+                                terjadi. Terdapat beberapa obat-obatan yang dapat membantu untuk mengatasi kondisi
+                                tersebut.
+                            </p>
+                        </li>
+                        <li>
+                            <h1 class="text-[15px] lg:text-[20px] font-bold">3. Perawatan intensif di rumah sakit</h1>
+                            <p class="text-[12px]">
+                                Dokter dan ahli kejiwaan akan menyarankan rawat inap jika pengidap membutuhkan
+                                pemantauan ketat terhadap gejala masalah kesehatan jiwa yang dialami.
+                                Selain itu, perawatan intensif juga mungkin perlu apabila pengidap menunjukkan kondisi
+                                gawat darurat misalnya percobaan bunuh diri.
+                            </p>
+                        </li>
+                        <li>
+                            <h1 class="text-[15px] lg:text-[20px] font-bold">4. Supporting group</h1>
+                            <p class="text-[12px]">
+                                Support group umumnya memiliki anggota pengidap penyakit kesehatan mental yang sejenis
+                                atau mereka yang sudah dapat mengendalikan emosinya dengan baik.
+                                Ketika melakukan sesi grup, orang-orang berkumpul untuk berbagi pengalaman dan
+                                membimbing satu sama lain menuju pemulihan yang lebih tepat, cepat, dan optimal.
+                            </p>
+                        </li>
+                        <li>
+                            <h1 class="text-[15px] lg:text-[20px] font-bold">5. Stimulasi pada otak</h1>
+                            <p class="text-[12px]">
+                                Rekomendasi penanganan gangguan kesehatan jiwa lainnya adalah stimulasi pada otak.
+                                Sederhananya, terapi ini berupa elektrokonvulsif, stimulasi magnetik transkranial,
+                                pengobatan eksperimental yang bernama stimulasi otak dalam, dan stimulasi saraf vagus.
+                            </p>
+                        </li>
+                        <li>
+                            <h1 class="text-[15px] lg:text-[20px] font-bold">6. Rehabilitasi</h1>
+                            <p class="text-[12px]">
+                                Pengobatan terhadap penyalahgunaan zat atau rehabilitasi memiliki tujuan utama untuk
+                                membantu menangani pengidap gangguan kesehatan mental yang terjadi karena ketergantungan
+                                akibat penyalahgunaan zat terlarang.
+                            </p>
+                        </li>
+                        <li>
+                            <h1 class="text-[15px] lg:text-[20px] font-bold">7. Perawatan mandiri</h1>
+                            <p class="text-[12px]">
+                                Selain penanganan medis dengan bantuan psikolog atau psikiater, pengidap juga bisa
+                                melakukan perawatan mandiri untuk mengatasi gangguan kesehatan mental.
+                                Misalnya, mengubah pola hidup dan pola makan sehat, dan mampu mengelola stres dengan
+                                baik.
+                                Selain itu, perawatan mandiri bersamaan dengan penanganan medis bisa membantu
+                                mempercepat proses pemulihan, memantau kondisi kesehatan, dan mengenali apa saja yang
+                                menjadi pemicu terjadinya gangguan psikologi tersebut.
+                                Penanganan gangguan kesehatan mental perlu dilakukan sesegera mungkin.
+                                Sebab, masalah kejiwaan juga bisa berpengaruh pada kondisi fisik.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="py-2 px-4 flex flex-col border-2 border-[#252525] rounded-lg text-center mx-2 lg:mx-20 mb-10 lg:mb-20">
+            <span>Jika kamu atau seseorang mengetahui lagi kesulitan dalam hal kesehatan mental, Pertolongan selalu tersedia disini</span>
+            <span>Hubungi nomor dibawah ini</span>
+            <span class="text-[30px] font-bold">119</span>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 </body>
 
 </html>

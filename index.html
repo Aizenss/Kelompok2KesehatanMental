@@ -1,263 +1,109 @@
-<!DOCTYPE html>
+[<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas P5 Smanta</title>
+    <title>Tugas P5 </title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
-        body {
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
             font-family: 'Poppins';
         }
     </style>
 </head>
-
-<body class="bg-[#252525]">
-    <nav class="bg-[#252525] ">
-        <marquee class="py-3">
-            <span class="self-center text-2xl font-semibold text-white whitespace-nowrap">Selamat Datang di Website Informasi Kesehatan Mental - Kelompok 2</span>
-        </marquee>
+<body>
+    <nav class="flex justify-between items-center px-[30px] py-2">
+        <div class="flex items-center">
+            <img src="logo.png" alt="logo" class="w-[70px] h-[70px]">
+            <span class="text-3xl font-bold">Bookify</span>
+        </div>
+        <div class="flex items-center gap-5">
+            <a href="#beranda" class="text-lg font-semibold">Beranda</a>
+            <a href="#list" class="text-lg font-semibold">List Buku</a>
+            <a href="#comingsoon" class="text-lg font-semibold">Buku Yang Akan Tersedia</a>
+            <a href="#about" class="text-lg font-semibold">Tentang Kami</a>
+        </div>
     </nav>
     <main>
-        <section class="flex flex-col justify-center items-center bg-[url(BackgroundMini.png)] lg:bg-[url(Background.png)] bg-center min-h-[300px] lg:min-h-[480px]">
-            <div class="flex flex-col bg-gray-50/50 lg:bg-gray-50/25 rounded-[30px] px-4 py-4">
-                <span class="text-[30px] lg:text-[70px] font-bold text-center">Sosial Information</span>
-                <span class="text-[25px] lg:text-[55px] font-bold text-center">Kesehatan Mental</span>
-            </div>
+        <section class="flex justify-center py-20">
+            <img src="fotoperpus.jpg" alt="" class="rounded-[30px]">
         </section>
-        <section class="bg-[#252525] px-2 py-10 lg:py-20">
-            <div class="text-white">
-                <h1 class="text-center text-[18px] lg:text-[30px] font-bold">Pengertian Kesehatan Mental</h1>
-                <p class="ms-1 lg:ms-5 text-[12px] lg:text-[18px] mt-5 text-start lg:text-center">Kesehatan jiwa atau sebutan lainnya kesehatan mental adalah
-                    kesehatan yang
-                    berkaitan
-                    dengan kondisi emosi, kejiwaan, dan psikis seseorang.
-                    Perlu kamu ketahui bahwa peristiwa dalam hidup yang berdampak besar pada kepribadian dan perilaku
-                    seseorang bisa berpengaruh pada kesehatan mentalnya.
-                    Misalnya, pelecehan saat usia dini, stres berat dalam jangka waktu lama tanpa adanya penanganan, dan
-                    mengalami kekerasan dalam rumah tangga.
-                    Berbagai kondisi tersebut bisa membuat kondisi kejiwaan seseorang terganggu, sehingga muncul gejala
-                    gangguan kesehatan jiwa.
-                    Akan tetapi, masalah kesehatan mental bisa mengubah cara seseorang dalam mengatasi stres,
-                    berhubungan dengan orang lain, membuat pilihan, dan memicu hasrat untuk menyakiti diri sendiri.
-                    Beberapa jenis gangguan mental yang umum terjadi antara lain depresi, gangguan bipolar, kecemasan,
-                    gangguan stres pasca trauma (PTSD), gangguan obsesif kompulsif (OCD), dan psikosis.
-                    Selain itu, ada beberapa penyakit mental hanya terjadi pada jenis pengidap tertentu, seperti
-                    postpartum depression hanya menyerang ibu setelah melahirkan.</p>
-            </div>
-        </section>
-        <section class="bg-[#EAE3D9] grid grid-cols-1 lg:grid-cols-2 items-center py-10 px-2 lg:px-20">
-            <div>
-                <img src="https://www.its.ac.id/news/wp-content/uploads/sites/2/2020/04/kesehatan-mental-3.png" alt="Gambar"
-                class="w-[500px] shadow-lg rounded-lg mx-auto">
-            </div>
-            <div class="text-start mt-10 text-black">
-                <h1 class="text-[15px] lg:text-[30px] font-bold">- Apa Saja Penyebab Gangguan Kesehatan Mental?</h1>
-                <div class="ms-1 lg:ms-5">
-                    <span>Ada beberapa kondisi yang bisa menjadi penyebab seseorang mengalami gangguan kesehatan jiwa,
-                        antara lain: </span>
-                    <ol class="list-decimal list-inside ms-3 text-[12px] mt-3">
-                        <li>Cedera pada kepala.</li>
-                        <li>Faktor genetik atau terdapat riwayat pengidap gangguan kesehatan jiwa dalam keluarga.</li>
-                        <li>Kekerasan dalam rumah tangga atau bentuk pelecehan lainnya.</li>
-                        <li>Adanya riwayat kekerasan saat kanak-kanak.</li>
-                        <li>Memiliki kelainan senyawa kimia otak atau gangguan pada otak.</li>
-                        <li>Diskriminasi dan stigma.</li>
-                        <li>Kehilangan atau kematian seseorang yang sangat dekat.</li>
-                        <li>Mengalami kerugian sosial, seperti masalah kemiskinan atau utang.</li>
-                        <li>Merawat anggota keluarga atau teman yang sakit kronis.</li>
-                        <li>Pengangguran, kehilangan pekerjaan, atau tunawisma.</li>
-                        <li>Pengaruh zat racun, alkohol, atau obat-obatan yang dapat merusak otak.</li>
-                        <li>Stres berat yang terjadi dalam waktu yang lama.</li>
-                        <li>Terisolasi secara sosial atau merasa kesepian.</li>
-                        <li>Tinggal pada lingkungan perumahan yang buruk.</li>
-                        <li>Mengalami trauma yang signifikan, seperti pertempuran militer, kecelakaan serius, atau
-                            tindakan kriminal lainnya.</li>
-                    </ol>
+        <section id="list" class="bg-[#252525] py-10 px-[30px]">
+            <h1 class="text-3xl font-bold text-center mb-10 text-white">List Buku Yang Tersedia</h1>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-10">
+                <div class="bg-white flex flex-col justify-between items-center rounded-[5px] py-3 px-3">
+                    <img src="basindogaminat3.png" class="w-[250px] h-[350px] rounded-[20px]" alt="">
+                    <div class="h-[4px] bg-[#252525] text-transparent w-[100%] my-4">---------</div>
+                    <span class="text-xl font-semibold text-center mb-3">Bahasa Indonesia Tingkat Lanjut</span>
+                    <a href="https://drive.google.com/file/d/1qkRupJfwxF2-Z4RNzKIf8ItpU4B_hdEi/view?usp=drive_link" target="_blank" class="bg-[#252525] text-white text-lg font-semibold text-center py-2 px-4 rounded-[5px]">Kunjungi</a>
+                </div>
+                <div class="bg-white flex flex-col justify-between items-center rounded-[5px] py-3 px-3">
+                    <img src="eko1.png" class="w-[250px] h-[350px] rounded-[20px]" alt="">
+                    <div class="h-[4px] bg-[#252525] text-transparent w-[100%] my-4">---------</div>
+                    <span class="text-xl font-semibold text-center mb-3">Ekonomi Kelas XII</span>
+                    <a href="https://drive.google.com/file/d/1uW4YA_PgX_RtbkFRHb_sXvWBcdnz1Vk3/view?usp=drive_link" target="_blank" class="bg-[#252525] text-white text-lg font-semibold text-center py-2 px-4 rounded-[5px]">Kunjungi</a>
+                </div>
+                <div class="bg-white flex flex-col justify-between items-center rounded-[5px] py-3 px-3">
+                    <img src="matekmatekan4.png" class="w-[250px] h-[350px] rounded-[20px]" alt="">
+                    <div class="h-[4px] bg-[#252525] text-transparent w-[100%] my-4">---------</div>
+                    <span class="text-xl font-semibold text-center mb-3">Matematika Kelas XII</span>
+                    <a href="https://drive.google.com/file/d/1mkyP4EDvmOCAbtlowzoaau1eT1FR3bT9/view?usp=drive_link" target="_blank" class="bg-[#252525] text-white text-lg font-semibold text-center py-2 px-4 rounded-[5px]">Kunjungi</a>
+                </div>
+                <div class="bg-white flex flex-col justify-between items-center rounded-[5px] py-3 px-3">
+                    <img src="sosio5.png" class="w-[250px] h-[350px] rounded-[20px]" alt="">
+                    <div class="h-[4px] bg-[#252525] text-transparent w-[100%] my-4">---------</div>
+                    <span class="text-xl font-semibold text-center mb-3">Sosiologi Kelas XII</span>
+                    <a href="https://drive.google.com/file/d/1ylOQGJ5NMSpis6E5N3OIPuKrLxURSHYF/view?usp=drive_link" target="_blank" class="bg-[#252525] text-white text-lg font-semibold text-center py-2 px-4 rounded-[5px]">Kunjungi</a>
+                </div>
+                <div class="bg-white flex flex-col justify-between items-center rounded-[5px] py-3 px-3">
+                    <img src="tik6.png" class="w-[250px] h-[350px] rounded-[20px]" alt="">
+                    <div class="h-[4px] bg-[#252525] text-transparent w-[100%] my-4">---------</div>
+                    <span class="text-xl font-semibold text-center mb-3">Informatika Kelas XII</span>
+                    <a href="https://drive.google.com/file/d/175XZbO4y0pyqQBGkGBqOoXVMh2X1qaxr/view?usp=drive_link" target="_blank" class="bg-[#252525] text-white text-lg font-semibold text-center py-2 px-4 rounded-[5px]">Kunjungi</a>
                 </div>
             </div>
         </section>
-        <section class="bg-[#252525] grid grid-cols-1 lg:grid-cols-2 lg:reverse items-center py-10 px-2 lg:px-20">
-            <div>
-                <img src="https://i.pinimg.com/564x/04/89/29/048929d1c4cdea5f341f254f7d16af5a.jpg" alt="Gambar"
-                class="w-[500px] shadow-lg rounded-lg mx-auto">
-            </div>
-            <div class="text-start text-white mt-10">
-                <h1 class="text-[15px] lg:text-[30px] font-bold">- Faktor Risiko Gangguan Kesehatan Mental</h1>
-                <div class="ms-1 lg:ms-5">
-                    <p>Selain itu, ada beberapa faktor yang bisa meningkatkan risiko seseorang mengalami gangguan
-                        kesehatan jiwa.
-                        Faktor tersebut antara lain:</p>
-                    <ol class="list-decimal list-inside ms-3 text-[12px] mt-3">
-                        <li>Wanita berisiko tinggi mengidap depresi dan kecemasan, sedangkan laki-laki memiliki risiko
-                            mengidap ketergantungan zat dan antisosial.</li>
-                        <li>Wanita setelah melahirkan.</li>
-                        <li>Adanya masalah pada masa kanak-kanak atau masalah gaya hidup.</li>
-                        <li>Menjalani profesi yang memicu stres, seperti dokter dan pengusaha.</li>
-                        <li>Memiliki riwayat anggota keluarga atau keluarga dengan penyakit mental.</li>
-                        <li>Mempunyai riwayat kelahiran dengan kelainan pada otak.</li>
-                        <li>Adanya riwayat penyakit mental sebelumnya.</li>
-                        <li>Mengalami kegagalan dalam hidup, seperti sekolah atau kehidupan kerja.</li>
-                        <li>Menyalahgunakan alkohol atau obat-obatan terlarang.</li>
-                    </ol>
+        <section id="comingsoon" class="flex flex-col justify-center items-center py-10">
+            <h1 class="text-3xl font-bold mb-10">List Buku Yang Akan Tersedia</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white flex flex-col justify-between items-center rounded-[40px] py-5 px-3 border-[1px] border-[#252525] shadow-xl">
+                    <img src="PagiDiAmerika.jpg" class="w-[250px] h-[350px] rounded-[20px]" alt="">
+                    <div class="h-[4px] bg-[#252525] text-transparent w-[100%] my-4">---------</div>
+                    <span class="text-xl font-semibold text-center mb-3">Pagi Di Amerika</span>
+                </div>
+                <div class="bg-white flex flex-col justify-between items-center rounded-[40px] py-5 px-3 border-[1px] border-[#252525] shadow-xl">
+                    <img src="PulangPergi.jpg" class="w-[250px] h-[350px] rounded-[20px]" alt="">
+                    <div class="h-[4px] bg-[#252525] text-transparent w-[100%] my-4">---------</div>
+                    <span class="text-xl font-semibold text-center mb-3">Pulang Pergi</span>
+                </div>
+                <div class="bg-white flex flex-col justify-between items-center rounded-[40px] py-5 px-3 border-[1px] border-[#252525] shadow-xl">
+                    <img src="KadoTerbaik.jpg" class="w-[250px] h-[350px] rounded-[20px]" alt="">
+                    <div class="h-[4px] bg-[#252525] text-transparent w-[100%] my-4">---------</div>
+                    <span class="text-xl font-semibold text-center mb-3">Kado Terbaik</span>
                 </div>
             </div>
         </section>
-        <section class="bg-[#EAE3D9] grid grid-cols-1 lg:grid-cols-2 items-center py-10 px-2 lg:px-20">
-            <div>
-                <img src="https://i.pinimg.com/564x/6f/e7/22/6fe722e1053ce9c559e5550d8ab389c9.jpg" alt="Gambar"
-                class="w-[500px] shadow-lg rounded-[20px] mx-auto">
-            </div>
-            <div class="text-start mt-10">
-                <h1 class="text-[15px] lg:text-[30px] font-bold">- Gejala Gangguan Kesehatan Mental</h1>
-                <div class="ms-1 lg:ms-5">
-                    <p>Gejala gangguan kesehatan jiwa bisa berbeda bergantung pada jenisnya.
-                        Kendati demikian, gejala umum dari kelainan kesehatan ini yang bisa kamu kenali antara lain:</p>
-                    <ol class="list-decimal list-inside ms-3 text-[12px] mt-3">
-                        <li>Berteriak atau berkelahi dengan keluarga dan teman-teman.</li>
-                        <li>Delusi, paranoia, atau halusinasi.</li>
-                        <li>Kehilangan kemampuan untuk berkonsentrasi.</li>
-                        <li>Ketakutan, kekhawatiran, atau perasaan bersalah yang selalu menghantui.</li>
-                        <li>Ketidakmampuan untuk mengatasi stres atau masalah sehari-hari.</li>
-                        <li>Marah berlebihan dan rentan melakukan kekerasan.</li>
-                        <li>Memiliki pengalaman dan kenangan buruk yang tidak dapat dilupakan.</li>
-                        <li>Adanya pikiran untuk menyakiti diri sendiri atau orang lain.</li>
-                        <li>Menarik diri dari orang-orang dan kegiatan sehari-hari.</li>
-                        <li>Mendengar suara atau mempercayai sesuatu yang tidak benar.</li>
-                        <li>Mengalami nyeri yang tidak dapat dijelaskan.</li>
-                        <li>Menunjukkan perubahan suasana hati secara mendadak yang menyebabkan masalah dalam hubungan
-                            dengan orang lain.</li>
-                        <li>Merasa bingung, pelupa, marah, tersinggung, cemas, kesal, khawatir, dan takut yang tidak
-                            biasa.</li>
-                        <li>Perasaan sedih, tidak berarti, tidak berdaya, putus asa, atau tanpa harapan.</li>
-                        <li>Merokok, minum alkohol lebih banyak dari biasanya, atau bahkan menggunakan narkoba.</li>
-                        <li>Perubahan drastis dalam kebiasaan makan, seperti makan terlalu banyak atau terlalu sedikit.
-                        </li>
-                        <li>Perubahan gairah seks.</li>
-                        <li>Rasa lelah yang signifikan, energi menurun, atau mengalami masalah tidur.</li>
-                        <li>Tidak dapat melakukan aktivitas sehari-hari seperti merawat anak atau pergi ke sekolah atau
-                            tempat kerja.</li>
-                        <li>Tidak mampu memahami situasi dan orang-orang.</li>
-                    </ol>
+        <section id="about" class="bg-[#252525] py-10 px-[30px]">
+            <h1 class="text-3xl font-bold text-center mb-10 text-white">Tentang Kami</h1>
+            <div class="grid grid-cols-1 md:grid-cols-4 justify-center items-center gap-10">
+                <div class="py-3 px-5 border-[1px] border-white rounded-[20px] text-white text-center">
+                    Bagas Budi Nugroho
+                </div>
+                <div class="py-3 px-5 border-[1px] border-white rounded-[20px] text-white text-center">
+                    Bagas Budi Nugroho
+                </div>
+                <div class="py-3 px-5 border-[1px] border-white rounded-[20px] text-white text-center">
+                    Bagas Budi Nugroho
+                </div>
+                <div class="py-3 px-5 border-[1px] border-white rounded-[20px] text-white text-center">
+                    Bagas Budi Nugroho
+                </div>
+                <div class="py-3 px-5 border-[1px] border-white rounded-[20px] text-white text-center">
+                    Bagas Budi Nugroho
                 </div>
             </div>
-        </section>
-        <section class="bg-[#252525] grid grid-cols-1 lg:grid-cols-2 items-center lg:reverse py-10 px-2 lg:px-20">
-            <div>
-                <img src="https://i.pinimg.com/564x/79/a5/8d/79a58da80880bcca8a1aebdac2102095.jpg" alt="Gambar"
-                class="w-[500px] shadow-lg rounded-[20px] mx-auto">
-            </div>
-            <div class="text-start text-white mt-10">
-                <h1 class="text-[15px] lg:text-[30px] font-bold">- Pengobatan Gangguan Kesehatan Mental</h1>
-                <div class="ms-1 lg:ms-5">
-                    <p>Ada beberapa cara penanganan gangguan kesehatan mental yang bisa menjadi pilihan sesuai dengan
-                        kondisi yang terjadi pada pengidap, yaitu: </p>
-                    <ul class="ms-3 text-[12px]">
-                        <li>
-                            <h1 class="text-[15px] lg:text-[20px] font-bold">1. Psikoterapi</h1>
-                            <p class="text-[12px]">
-                                Pertama, penanganan dengan psikoterapi. Ini merupakan jenis terapi dengan media yang
-                                aman untuk mengungkapkan perasaan dan memberikan saran yang sesuai.
-                                Dalam situasi ini, psikiater akan memberi bantuan dengan membimbing pengidap dalam
-                                mengontrol perasaan.
-                                Sementara itu, psikoterapi beserta perawatan dengan menggunakan obat-obatan merupakan
-                                cara yang paling efektif untuk mengobati penyakit kesehatan mental.
-                                Contohnya cognitive behavioral therapy, exposure therapy, dialectical behavior therapy,
-                                dan sebagainya.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-[15px] lg:text-[20px] font-bold">2. Obat</h1>
-                            <p class="text-[12px]">
-                                Pemberian obat-obatan untuk mengobati penyakit kesehatan jiwa umumnya bertujuan untuk
-                                mengubah senyawa kimia pada otak.
-                                Beberapa obat tersebut berupa golongan selective serotonin reuptake inhibitor (SSRI),
-                                serotonin-norepinephrine reuptake inhibitor (SNRIs), dan antidepresan trisiklik.
-                                Dokter biasanya akan mengombinasikan resep obat dengan psikoterapi untuk hasil
-                                pengobatan yang lebih efektif.
-                                Bipolar dan skizofrenia merupakan dua dari berbagai jenis gangguan mental yang umum
-                                terjadi. Terdapat beberapa obat-obatan yang dapat membantu untuk mengatasi kondisi
-                                tersebut.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-[15px] lg:text-[20px] font-bold">3. Perawatan intensif di rumah sakit</h1>
-                            <p class="text-[12px]">
-                                Dokter dan ahli kejiwaan akan menyarankan rawat inap jika pengidap membutuhkan
-                                pemantauan ketat terhadap gejala masalah kesehatan jiwa yang dialami.
-                                Selain itu, perawatan intensif juga mungkin perlu apabila pengidap menunjukkan kondisi
-                                gawat darurat misalnya percobaan bunuh diri.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-[15px] lg:text-[20px] font-bold">4. Supporting group</h1>
-                            <p class="text-[12px]">
-                                Support group umumnya memiliki anggota pengidap penyakit kesehatan mental yang sejenis
-                                atau mereka yang sudah dapat mengendalikan emosinya dengan baik.
-                                Ketika melakukan sesi grup, orang-orang berkumpul untuk berbagi pengalaman dan
-                                membimbing satu sama lain menuju pemulihan yang lebih tepat, cepat, dan optimal.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-[15px] lg:text-[20px] font-bold">5. Stimulasi pada otak</h1>
-                            <p class="text-[12px]">
-                                Rekomendasi penanganan gangguan kesehatan jiwa lainnya adalah stimulasi pada otak.
-                                Sederhananya, terapi ini berupa elektrokonvulsif, stimulasi magnetik transkranial,
-                                pengobatan eksperimental yang bernama stimulasi otak dalam, dan stimulasi saraf vagus.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-[15px] lg:text-[20px] font-bold">6. Rehabilitasi</h1>
-                            <p class="text-[12px]">
-                                Pengobatan terhadap penyalahgunaan zat atau rehabilitasi memiliki tujuan utama untuk
-                                membantu menangani pengidap gangguan kesehatan mental yang terjadi karena ketergantungan
-                                akibat penyalahgunaan zat terlarang.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-[15px] lg:text-[20px] font-bold">7. Perawatan mandiri</h1>
-                            <p class="text-[12px]">
-                                Selain penanganan medis dengan bantuan psikolog atau psikiater, pengidap juga bisa
-                                melakukan perawatan mandiri untuk mengatasi gangguan kesehatan mental.
-                                Misalnya, mengubah pola hidup dan pola makan sehat, dan mampu mengelola stres dengan
-                                baik.
-                                Selain itu, perawatan mandiri bersamaan dengan penanganan medis bisa membantu
-                                mempercepat proses pemulihan, memantau kondisi kesehatan, dan mengenali apa saja yang
-                                menjadi pemicu terjadinya gangguan psikologi tersebut.
-                                Penanganan gangguan kesehatan mental perlu dilakukan sesegera mungkin.
-                                Sebab, masalah kejiwaan juga bisa berpengaruh pada kondisi fisik.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="bg-[#EAE3D9] py-2 lg:py-10 px-4 flex flex-col rounded-t-lg text-center mx-2 lg:mx-20">
-            <span>Jika kamu atau seseorang mengetahui lagi kesulitan dalam hal kesehatan mental, Pertolongan selalu
-                tersedia disini</span>
-            <span>Hubungi nomor dibawah ini</span>
-            <span class="text-[30px] font-bold">119</span>
-            <div class="flex justify-center">
-                <hr class="h-[2px] mt-4 bg-[#252525] border-0 w-[50%]">
-            </div>
-        </section>
-        <section id="beranda" class="bg-[#EAE3D9] flex flex-col justify-center items-center px-4 py-[30px] lg:py-[50px]">
-            <span class="text-[15px] lg:text-[40px] font-bold">Kelompok 2</span>
-            <ul class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 text-center">
-                <li class="py-2 px-4 border-2 border-[#252525] rounded-lg">Adinda Zhoya Hapsari (03)</li>
-                <li class="py-2 px-4 border-2 border-[#252525] rounded-lg">Alisa Angelica Noviansa (04)</li>
-                <li class="py-2 px-4 border-2 border-[#252525] rounded-lg">Anggun Maharani Nigita P. (06)</li>
-                <li class="py-2 px-4 border-2 border-[#252525] rounded-lg">Sahira Rana Annisa (29)</li>
-                <li class="py-2 px-4 border-2 border-[#252525] rounded-lg">Vebriyanti Rukmana (31)</li>
-                <li class="py-2 px-4 border-2 border-[#252525] rounded-lg">Zahra Angelina Bustomy (35)</li>
-            </ul>
         </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 </body>
-
 </html>
